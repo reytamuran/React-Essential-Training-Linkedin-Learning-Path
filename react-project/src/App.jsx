@@ -1,13 +1,23 @@
 import './App.css'
 
-let language = "React";  //create variable
-let moon = "☽";
+function Header() {
+return (
+  <header>
+    <h1>Eve's Kitchen </h1>
+  </header>
+)
+}
 
 function App() {
   return (
-   <h1>Hello {language.toUpperCase()} World! {moon}</h1> 
-   //variables can be injected into the body of the component using curly braces
-   // and methods works inside these braces
+    <div>
+      <Header/>
+      <main>
+        <h2> We serve the most delicious food around</h2>
+      </main>
+    </div>
+   
+
   )
 }
 
