@@ -1,11 +1,10 @@
 import './App.css'
 
-function Header(props) {  // we can reference those properties on the props 
-                          // object that is passed into each one of these values
+function Header({name, year}) {  //simplify and we dont have to use prop. anymore
 return (
   <header>
-    <h1>{props.name}'s Kitchen </h1>
-    <p>Copyright {props.year}</p>
+    <h1>{name}'s Kitchen </h1>
+    <p>Copyright {year}</p>
   </header>
 )
 }
